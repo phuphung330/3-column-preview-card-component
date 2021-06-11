@@ -1,0 +1,94 @@
+:root{
+    --sedan_bg: hsl(31, 77%, 52%);
+    --suv_bg: hsl(184, 100%, 22%);
+    --luxury_bg:hsl(179, 100%, 13%);
+    --p_color:hsla(0, 0%, 100%, 0.75);
+    --bg_h2_btn: hsl(0, 0%, 95%);
+    --font1:'Big Shoulders Display', cursive;
+    --font2: 'Lexend Deca', sans-serif;
+}
+
+*,*:after,*:before{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: var(--font2);
+    color:white;
+    font-size: 1rem;
+    background-color: var(--bg_h2_btn);
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+
+}
+.content{
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 10px;
+    overflow: hidden;
+    line-height: 1.8;
+}
+.sedan,.suvs,.luxury{    
+    padding: 2rem 4rem 0 3.5rem;
+}
+.sedan{
+    background-color: var(--sedan_bg);
+}
+.suvs{
+    background-color: var(--suv_bg);
+}
+.luxury{ 
+    background-color: var(--luxury_bg);
+}
+p{
+    color: var(--p_color);
+    margin-top: 0;
+    padding-top: 0;
+}
+h1{
+  font-family: var(--font1);
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  padding-bottom:0;
+  margin-bottom: 0;
+}
+
+/* button sedan */
+
+.btn {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-size: rem;
+    background-color: var(--bg_h2_btn);
+    padding: 14px 40px 14px 40px;
+    border: 2px solid white;
+    text-decoration: none;
+    text-transform: capitalize;
+    text-transform: transparent;
+    margin: 80px 0 40px 0;
+    font-family: var(--font2);
+}
+  
+.btn:hover {
+    background-color: transparent;
+    color:white !important;
+    cursor: pointer;
+  }
+.btn.btn1{
+    color:var(--sedan_bg);    
+}
+.btn.btn2{
+    color: var(--suv_bg);
+}
+.btn.btn3{
+    color: var(--luxury_bg);
+}
+  
+  
